@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/media-queries.css">
+  <title>Crunchyroll</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="header">
+  <a href="#"><img class="header__img" src="assets/img/logo-crunchyroll.png" alt="Logo"></a>
+  <div class="header__menu">
+    <div class="header__menu--profile">
+      <img src="./assets/img/user-icon.png" alt="User Photo">
+      <p>Profile</p>
+      <!-- <details>
+          <summary>Profile</summary>
+          <ul>
+              <li><a href="#">Account</a></li>
+              <li><a href="#">Sign Out</a></li>
+          </ul>
+      </details> -->
+    </div>
+    <ul>
+      <li><a href="#">Account</a></li>
+      <li><a href="./login.html">Sign Out</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- Search bar section -->
+<section class="search">
+  <h2 class="search__title">What do you wanna see today?</h2>
+  <input class="input" type="text" placeholder="Search...">
+</section>
+
+<!-- Carousel section -->
+<h3 class="categories__title">Mi Lista</h3>
+<section class="carousel">
+  <div class="carousel__container">
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire3/cbb55a6382682bf71e91f685c6473c5a1487736090_full.jpg" alt="HunterXHunter">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Hunter X Hunter</p>
+        <p class="carousel-item__details--subtitle">2011</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire3/f1fe5c7a43cb2f38f4152a58f89479821554508873_full.jpg" alt="Demon Slayer">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Kimetsu No Yaiba</p>
+        <p class="carousel-item__details--subtitle">2019</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire2/07f56cb3c9220952600b0975a883b0f91546997210_full.jpg" alt="The Promise Neverland">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">The Promise Neverland</p>
+        <p class="carousel-item__details--subtitle">2019</p>
+        <p class="carousel-description">
+          Por mucho que los niños la quieran, ella no es su madre. Viven juntos, pero no son familiares de sangre.
+          Grace Field es un hogar al que son enviados los niños que no tienen padres.
+          Un hogar irreemplazable para los 38 niños que allí viven felices su día a día,
+          como si fueran hermanos, aunque al inicio fueran completos desconocidos.
+          Al menos así era hasta que cierto descubrimiento cambió sus vidas por completo...</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire4/697c8b5ff2f49a97348b5507c06e11831576116356_full.jpg" alt="Death Note">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Death Note</p>
+        <p class="carousel-item__details--subtitle">2006</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire3/02c909684baa37d6ef70a9df742d58951610752067_full.jpg" alt="Jujutsu Kaisen">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Jujutsu Kaisen</p>
+        <p class="carousel-item__details--subtitle">2020</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire4/a9c1f36167964b81371db1bde94087861580166621_full.jpg" alt="Haikyu">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Haikyu!!</p>
+        <p class="carousel-item__details--subtitle">2014</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire2/9f9d3ec824444991d22082852cdc3c741586972680_full.jpg" alt="Food Wars">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Food Wars!</p>
+        <p class="carousel-item__details--subtitle">2015</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire4/8056a82e973dde98ebb82abd39dc69731564519729_full.jpg" alt="One Piece">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">One Piece</p>
+        <p class="carousel-item__details--subtitle">1999</p>
+        <p class="carousel-description"> Monkey. D. Luffy se rehusa a que nadie se interponga en su camino por la búsqueda para convertirse el rey de todos los piratas. Con un camino trazado por las traicioneras aguas del Grand Line y más allá, se trata de un capitán que nunca se dará por vencido hasta que consiga el tesoro más grande de la Tierra: el Legendario One Piece</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire3/501db6b69ced79e79a556b20cbdb9c5d1609784936_full.jpg" alt="Black Clover">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Black Clover</p>
+        <p class="carousel-item__details--subtitle">2018</p>
+        <p class="carousel-description">En un mundo en el que la magia lo es todo, Asta y Yuno son dos niños que encuentran
+          abandonados el mismo día en una iglesia. Mientras que Yuno crece demostrando tener unos grandes poderes mágicos,
+          Asta parece ser la única persona en el mundo que no posee capacidad mágica alguna. Eso no importará a los dos jóvenes,
+          que aspirarán a alcanzar el puesto de Rey Mago, el mejor mago de todos. Pero para ello tendrán que ser
+          seleccionados primero por una Orden de Caballeros Mágicos, ¡y Asta no tiene magia!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<h3 class="categories__title">Popular</h3>
+<section class="carousel">
+  <div class="carousel__container">
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire4/81ba04142373eed44f7e0c2f278b17361626143500_full.jpg" alt="Tokyo Revngers">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Tokyo Revengers</p>
+        <p class="carousel-item__details--subtitle">2021</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire2/0b4058ac696f38e436191cceb9b749b91633623149_full.jpg" alt="Platinum End">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Platinum End</p>
+        <p class="carousel-item__details--subtitle">2021</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire4/406916ead6c45d4ceb9eb7c4d018da611626348574_full.jpg" alt="My Hero Academia">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">My Hero Academia</p>
+        <p class="carousel-item__details--subtitle">2016</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire3/1ce8ca573ac440e55f9482f42eac5a251608611536_full.jpg" alt="Attack On Titan">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Attack on Titan</p>
+        <p class="carousel-item__details--subtitle">2013</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire1/e912a5b800502bb400e7dfa454f521431633316826_full.jpg" alt="86 EIGHTY-SIX">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">86 EIGHTY-SIX</p>
+        <p class="carousel-item__details--subtitle">2021</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire3/4523d1dd4f88fc57236cb932d7023d721612982034_full.jpg" alt="Bleach">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Bleach</p>
+        <p class="carousel-item__details--subtitle">2004</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire4/fabddf1040abbd18948b9aacc18011b31475523493_full.jpg" alt="FMAB">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Fullmetal Alchemist: Brotherhood</p>
+        <p class="carousel-item__details--subtitle">2009</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<h3 class="categories__title">Alfabetico</h3>
+<section class="carousel">
+  <div class="carousel__container">
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire3/cc63e8a94f2028ff91b9c451e023e10a1570487820_full.jpg" alt="Tokyo Revngers">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Assasins Pride</p>
+        <p class="carousel-item__details--subtitle">2019</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire2/893a35d45c053eb2171051fc591c07bc1396898246_full.jpg" alt="Platinum End">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Black Bullet</p>
+        <p class="carousel-item__details--subtitle">2014</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire1/64d502610c066e0424c248f8d1064a4f1617401090_full.jpg" alt="My Hero Academia">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Code Geass</p>
+        <p class="carousel-item__details--subtitle">2008</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire3/a2afe488cbf6448cda89eb8f87852aec1610654741_full.jpg" alt="Attack On Titan">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Dr.Stone</p>
+        <p class="carousel-item__details--subtitle">2019</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire4/3727644b109279e2cb405ac89b0f293f1452549294_full.jpg" alt="86 EIGHTY-SIX">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Erased</p>
+        <p class="carousel-item__details--subtitle">2016</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire3/2ee05df6e44530437069955b71f09daf1317839234_full.jpg" alt="Bleach">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Fate Zero</p>
+        <p class="carousel-item__details--subtitle">2014</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire4/0b07451e9b20be6c024833a762a2e6a81538837010_full.jpg" alt="FMAB">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Globin Slayer</p>
+        <p class="carousel-item__details--subtitle">2018</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire2/47245fb608dd8cfffb2f5b4d39ebe0fb1380929548_full.jpg" alt="FMAB">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Hajime No Ippo: The Fighting!</p>
+        <p class="carousel-item__details--subtitle">2000</p>
+      </div>
+    </div>
+    </div>
+  <div class="carousel-item">
+    <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire2/db091db10d71a19dc8ea5ba3e45513371582643783_full.jpg" alt="FMAB">
+    <div class="carousel-item__details">
+      <div>
+        <img src="./assets/img/play.png" alt="Play"/>
+        <img src="./assets/img/plus.png" alt="Plus"/>
+      </div>
+      <p class="carousel-item__details--title">In/Spectre</p>
+      <p class="carousel-item__details--subtitle">2020</p>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire3/04b29833ccaaf2ee6bda1d08f2f02ecf1539039197_full.jpg" alt="FMAB">
+    <div class="carousel-item__details">
+      <div>
+        <img src="./assets/img/play.png" alt="Play"/>
+        <img src="./assets/img/plus.png" alt="Plus"/>
+      </div>
+      <p class="carousel-item__details--title">JoJo no Kimyō na Bōken</p>
+      <p class="carousel-item__details--subtitle">2005</p>
+    </div>
+  </div>
+  </div>
+  <div class="carousel-item">
+    <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire4/b280bcf643da156b34203b33e1e08d071572404899_full.jpg" alt="FMAB">
+    <div class="carousel-item__details">
+      <div>
+        <img src="./assets/img/play.png" alt="Play"/>
+        <img src="./assets/img/plus.png" alt="Plus"/>
+      </div>
+      <p class="carousel-item__details--title">Kabaneri of the Iron Fortress</p>
+      <p class="carousel-item__details--subtitle">2016</p>
+    </div>
+  </div>
+  </div>
+  <div class="carousel-item">
+    <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire3/5593023cde14f81a84ae8e8ca6964a051523145238_full.jpg" alt="FMAB">
+    <div class="carousel-item__details">
+      <div>
+        <img src="./assets/img/play.png" alt="Play"/>
+        <img src="./assets/img/plus.png" alt="Plus"/>
+      </div>
+      <p class="carousel-item__details--title">Libra of Nil Admirari</p>
+      <p class="carousel-item__details--subtitle">2018</p>
+    </div>
+  </div>
+  </div>
+  <div class="carousel-item">
+    <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire4/24452933dd3f9282b32e49f0ce5fdc5b1546985597_full.jpg" alt="FMAB">
+    <div class="carousel-item__details">
+      <div>
+        <img src="./assets/img/play.png" alt="Play"/>
+        <img src="./assets/img/plus.png" alt="Plus"/>
+      </div>
+      <p class="carousel-item__details--title">Mob Psycho 100</p>
+      <p class="carousel-item__details--subtitle">2018</p>
+    </div>
+  </div>
+  </div>
+  <div class="carousel-item">
+    <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire1/5a4525c6fc5508fa27f0ed229ad2cbde1396985147_full.jpg" alt="FMAB">
+    <div class="carousel-item__details">
+      <div>
+        <img src="./assets/img/play.png" alt="Play"/>
+        <img src="./assets/img/plus.png" alt="Plus"/>
+      </div>
+      <p class="carousel-item__details--title">No Game No Life</p>
+      <p class="carousel-item__details--subtitle">2014</p>
+    </div>
+  </div>
+  </div>
+  <div class="carousel-item">
+    <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire3/9e1a4846885dc3994414b608f80490781531935326_full.jpg" alt="FMAB">
+    <div class="carousel-item__details">
+      <div>
+        <img src="./assets/img/play.png" alt="Play"/>
+        <img src="./assets/img/plus.png" alt="Plus"/>
+      </div>
+      <p class="carousel-item__details--title">Overlord</p>
+      <p class="carousel-item__details--subtitle">2015</p>
+    </div>
+  </div>
+  </div>
+  <div class="carousel-item">
+    <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire2/7d31dfaf49397a8cc1e490ccedea04e21422401583_full.jpg" alt="FMAB">
+    <div class="carousel-item__details">
+      <div>
+        <img src="./assets/img/play.png" alt="Play"/>
+        <img src="./assets/img/plus.png" alt="Plus"/>
+      </div>
+      <p class="carousel-item__details--title">Parasyte -the maxim-</p>
+      <p class="carousel-item__details--subtitle">2014</p>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire4/fdd04d77c8a008d238a77fb26ae5024b1467144870_full.jpg" alt="FMAB">
+    <div class="carousel-item__details">
+      <div>
+        <img src="./assets/img/play.png" alt="Play"/>
+        <img src="./assets/img/plus.png" alt="Plus"/>
+      </div>
+      <p class="carousel-item__details--title">Qualidea Code</p>
+      <p class="carousel-item__details--subtitle">2016</p>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire3/fc067a7fe1d85ce964eab0ace454a6991641454101_full.jpg" alt="FMAB">
+    <div class="carousel-item__details">
+      <div>
+        <img src="./assets/img/play.png" alt="Play"/>
+        <img src="./assets/img/plus.png" alt="Plus"/>
+      </div>
+      <p class="carousel-item__details--title">Ranking of Kings</p>
+      <p class="carousel-item__details--subtitle">2021</p>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire4/7b09fbb42da3d9fa613ec1d025cf41df1411687266_full.jpg" alt="FMAB">
+    <div class="carousel-item__details">
+      <div>
+        <img src="./assets/img/play.png" alt="Play"/>
+        <img src="./assets/img/plus.png" alt="Plus"/>
+      </div>
+      <p class="carousel-item__details--title">Saint Seiya</p>
+      <p class="carousel-item__details--subtitle">1986</p>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire1/267dfb939e4c1dc9282d5fb8d2b4e6ee1633430413_full.jpg" alt="FMAB">
+    <div class="carousel-item__details">
+      <div>
+        <img src="./assets/img/play.png" alt="Play"/>
+        <img src="./assets/img/plus.png" alt="Plus"/>
+      </div>
+      <p class="carousel-item__details--title">takt op.Destiny</p>
+      <p class="carousel-item__details--subtitle">2021</p>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire1/d4dc90fd4a8dac736cdd95c9236353591491511177_full.jpg" alt="FMAB">
+    <div class="carousel-item__details">
+      <div>
+        <img src="./assets/img/play.png" alt="Play"/>
+        <img src="./assets/img/plus.png" alt="Plus"/>
+      </div>
+      <p class="carousel-item__details--title">Uchoten Kazoku 2</p>
+      <p class="carousel-item__details--subtitle">2013</p>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire3/f7cdf17182ad1deb81b07a2aa09ffcc51539392387_full.jpg" alt="FMAB">
+    <div class="carousel-item__details">
+      <div>
+        <img src="./assets/img/play.png" alt="Play"/>
+        <img src="./assets/img/plus.png" alt="Plus"/>
+      </div>
+      <p class="carousel-item__details--title">VOICE OF FOX</p>
+      <p class="carousel-item__details--subtitle">2018</p>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire3/29073b766bd972c4519028ea4f0ef6721634604609_full.jpg" alt="FMAB">
+    <div class="carousel-item__details">
+      <div>
+        <img src="./assets/img/play.png" alt="Play"/>
+        <img src="./assets/img/plus.png" alt="Plus"/>
+      </div>
+      <p class="carousel-item__details--title">World Trigger</p>
+      <p class="carousel-item__details--subtitle">2013</p>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire3/db4565f9025212d19ce241ee108e46b21538181824_full.jpg" alt="FMAB">
+    <div class="carousel-item__details">
+      <div>
+        <img src="./assets/img/play.png" alt="Play"/>
+        <img src="./assets/img/plus.png" alt="Plus"/>
+      </div>
+      <p class="carousel-item__details--title">Xuan Yuan Sword Luminary</p>
+      <p class="carousel-item__details--subtitle">2013</p>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire1/837409ac43551c978dd2978d3a55f92a1415999996_full.jpg" alt="FMAB">
+    <div class="carousel-item__details">
+      <div>
+        <img src="./assets/img/play.png" alt="Play"/>
+        <img src="./assets/img/plus.png" alt="Plus"/>
+      </div>
+      <p class="carousel-item__details--title">Yu-Gi-Oh!</p>
+      <p class="carousel-item__details--subtitle">2013</p>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire1/a5f2c3dabd4923e2778811b1b318bafe1618246628_full.jpg" alt="FMAB">
+    <div class="carousel-item__details">
+      <div>
+        <img src="./assets/img/play.png" alt="Play"/>
+        <img src="./assets/img/plus.png" alt="Plus"/>
+      </div>
+      <p class="carousel-item__details--title">ZOMBIE LAND SAGA</p>
+      <p class="carousel-item__details--subtitle">2013</p>
+    </div>
+  </div>
+</section>
+
+<h3 class="categories__title">Géneros</h3>
+<br>
+<h3 class="categories__title">Acción</h3>
+<section class="carousel">
+  <div class="carousel__container">
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire2/7cf782a4e1b370ca33b36b33560c65421492725920_full.jpg" alt="Tokyo Revngers">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Blood Blockade Battlefront</p>
+        <p class="carousel-item__details--subtitle">2015</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire3/5142ab9ed5dd56153b731de52021ac5b1379547918_full.jpg" alt="Platinum End">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Kill la Kill</p>
+        <p class="carousel-item__details--subtitle">2013</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire2/fd6f801d77097e20eb5ffb9232de14d01430173031_full.jpg" alt="My Hero Academia">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Fate/Stay night</p>
+        <p class="carousel-item__details--subtitle">2010</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire1/e0c8a39fa014e57a95ef3682a4cc61d31483733959_full.jpg" alt="Attack On Titan">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Blue Exorcist</p>
+        <p class="carousel-item__details--subtitle">2013</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire4/7d3070bc3f5e32a8187ceea7445013301594706429_full.jpg" alt="86 EIGHTY-SIX">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Sword Art Online</p>
+        <p class="carousel-item__details--subtitle">2012</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire3/e91939a4f48ac442425e1ded03ba36731467927131_full.jpg" alt="Bleach">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">91 Days</p>
+        <p class="carousel-item__details--subtitle">2016</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire3/1ee8628337834531f6427a97248129871420484061_full.jpg" alt="FMAB">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Aldnoah Zero</p>
+        <p class="carousel-item__details--subtitle">2014</p>
+      </div>
+    </div>
+  </div>
+</section>
+<h3 class="categories__title">Géneros</h3>
+<br>
+<h3 class="categories__title">Aventura</h3>
+<section class="carousel">
+  <div class="carousel__container">
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire2/691011d134b441ab95ca1bc0ac85095e1493152833_full.jpg" alt="Tokyo Revngers">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Akashic Records of Bastard Magical Instructor</p>
+        <p class="carousel-item__details--subtitle">2015</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire2/2a560a83c5ba6eefb87200bc4a03ddad1467930221_full.jpg" alt="Platinum End">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Alderamin on the Sky</p>
+        <p class="carousel-item__details--subtitle">2013</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire1/9605b3a298733461f55412488a7e02af1634890778_full.jpg" alt="My Hero Academia">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Dragon Quest: La aventura de Dai</p>
+        <p class="carousel-item__details--subtitle">2021</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire1/ee2d3bb6a90a2c471c18a7eed18ff0691451338768_full.jpg" alt="Attack On Titan">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Lupin III - Cuarta Parte</p>
+        <p class="carousel-item__details--subtitle">2013</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire1/27ee54e7e9ec05447cc2d971c99fbe9b1562751577_full.jpg" alt="86 EIGHTY-SIX">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Isekai Cheat Magician</p>
+        <p class="carousel-item__details--subtitle">2012</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire4/1573d084547185548e5be03c8f2f6d791539039376_full.jpg" alt="Bleach">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Fist of the Blue Sky: Regenesis</p>
+        <p class="carousel-item__details--subtitle">2016</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire3/2dea28d9e1164f3dc918df0bff7c4cd41507268536_full.jpg" alt="FMAB">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Kino's Journey -the Beautiful World</p>
+        <p class="carousel-item__details--subtitle">2014</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<h3 class="categories__title">Géneros</h3>
+<br>
+<h3 class="categories__title">Comedia</h3>
+<section class="carousel">
+  <div class="carousel__container">
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire4/c15e58f7beaf54646c1ad0bcbb4886ff1507336620_full.jpg" alt="Tokyo Revngers">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">BLEND-S</p>
+        <p class="carousel-item__details--subtitle">2015</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire2/aba45cd799e37a0ad8e745a7a822d3561618005905_full.jpg" alt="Platinum End">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">DON'T TOY WITH ME, MISS NAGATORO</p>
+        <p class="carousel-item__details--subtitle">2013</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire4/8f61d08e713fc25ad54cf12079836b5f1499856494_full.jpg" alt="My Hero Academia">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">GAMERS!</p>
+        <p class="carousel-item__details--subtitle">2021</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire3/ab21e2b37d995124ea4a77f51f81becc1436371805_full.jpg" alt="Attack On Titan">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Himouto! Umaru-chan</p>
+        <p class="carousel-item__details--subtitle">2013</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire4/faa002ac9675024246d94d4b8f4133561547263949_full.jpg" alt="86 EIGHTY-SIX">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">KAGUYA-SAMA: LOVE IS WAR</p>
+        <p class="carousel-item__details--subtitle">2012</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire3/759dd20c7d5ca3cc630e2d27e2a7f63e1333392499_full.jpg" alt="Bleach">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Rock Lee no Seishun Full-Power Ninden</p>
+        <p class="carousel-item__details--subtitle">2016</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-item__img" src="https://img1.ak.crunchyroll.com/i/spire1/be9da4b43d277a66dc4d6b30b0fc66451539039605_full.jpg" alt="FMAB">
+      <div class="carousel-item__details">
+        <div>
+          <img src="./assets/img/play.png" alt="Play"/>
+          <img src="./assets/img/plus.png" alt="Plus"/>
+        </div>
+        <p class="carousel-item__details--title">Ace Attorney</p>
+        <p class="carousel-item__details--subtitle">2014</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<div class="footer-dark">
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-3 item">
+          <h3>Lo más popular</h3>
+          <ul>
+            <li><a href="#">Dragon Ball Super</a></li>
+            <li><a href="#">One Piece</a></li>
+            <li><a href="#">The Ancient Magus' Bride</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-3 item">
+          <h3>Plataformas y Equipos</h3>
+          <ul>
+            <li><a href="#">Wii U</a></li>
+            <li><a href="#">Xbox One</a></li>
+            <li><a href="#">PlayStation 4</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 item text">
+          <h3>Suscripciones Premium</h3>
+          <ul>
+            <li><a href="https://www.crunchyroll.com/es/welcome?from=bottombar&return_url=https://www.crunchyroll.com/videos/anime#plans">Prueba Gratuita de 2 Semanas</a></li>
+            <li><a href="https://store.crunchyroll.com/collections/membership-gift-cards">Regalo de suscripciones</a></li>
+            <li><a href="https://www.crunchyroll.com/redeem">Canjear Código</a></li>
+          </ul>
+        </div>
+        <div class="col item social"><a href="https://www.facebook.com/Crunchyroll.la"><i class="icon ion-social-facebook"></i></a><a href="https://twitter.com/crunchyroll_la"><i class="icon ion-social-twitter"></i></a><a href="https://www.crunchyroll.com/es"><i class="icon ion-social-snapchat"></i></a><a href="https://www.instagram.com/crunchyroll_es/"><i class="icon ion-social-instagram"></i></a></div>
+      </div>
+      <p class="copyright">Crunchyroll © 2006</p>
+    </div>
+  </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
